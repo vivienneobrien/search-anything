@@ -4,14 +4,12 @@ import Masonry from "react-masonry-css";
 import axios from "axios";
 import MediaCard from "../components/MediaCard.component";
 
-const Template = ({ url, tag }) => {
+const Template = ({ url, endpoint, name }) => {
   const [media, setMedia] = useState([]);
-  //   const endpoint = ".data.hits";
-  const mediaTypeTag = tag;
   useEffect(() => {
     axios
       .get(url)
-      .then((response) => setMedia(response.data.hits))
+      .then((response) => setMedia(name ? response.data[name] : response.data))
       .catch(function (error) {
         console.log(error);
       });
@@ -32,10 +30,7 @@ const Template = ({ url, tag }) => {
       >
         {media.map((individualMedia) => (
           <div key={individualMedia.id}>
-            <MediaCard
-              individualMedia={individualMedia}
-              mediaTypeTag={mediaTypeTag}
-            />
+            <MediaCard individualMedia={individualMedia} endpoint={endpoint} />
           </div>
         ))}
       </Masonry>

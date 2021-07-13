@@ -3,13 +3,28 @@ import CardHeader from "@material-ui/core/CardHeader";
 import { CardContent, Typography } from "@material-ui/core";
 import React from "react";
 
-const MediaCard = ({ individualMedia, mediaTypeTag }) => {
+const getEndpoint = (endpoint, individualMedia) => {
+  let newEndpoint;
+  if (endpoint === "webformatURL") {
+    newEndpoint = <img src={individualMedia.webformatURL} alt="information" />;
+  } else if (endpoint === "videos.tiny.url") {
+    newEndpoint = (
+      <video src={individualMedia.videos.tiny.url} alt="information" />
+    );
+  } else {
+    newEndpoint = individualMedia.author;
+  }
+
+  return newEndpoint;
+};
+
+const MediaCard = ({ individualMedia, endpoint }) => {
   return (
     <Card elevation={3}>
       <CardHeader title={individualMedia.tags} />
       <CardContent>
         <Typography variant="body2" colour="textSecondary" noWrap>
-          {mediaTypeTag}
+          {getEndpoint(endpoint, individualMedia)}
         </Typography>
       </CardContent>
     </Card>
