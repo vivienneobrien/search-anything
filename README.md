@@ -1,6 +1,6 @@
 # Search Anything
 
-> An API to search for most everything
+> An API to search for almost everything
 
 ## How
 
