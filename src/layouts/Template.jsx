@@ -28,8 +28,8 @@ const Template = ({ url, endpoint, name }) => {
         className="my-masonry-grid"
         columnClassName="my-masonry-grid_column"
       >
-        {media.map((individualMedia) => (
-          <div key={individualMedia.id}>
+        {media.map((individualMedia, index) => (
+          <div key={index}>
             <MediaCard individualMedia={individualMedia} endpoint={endpoint} />
           </div>
         ))}

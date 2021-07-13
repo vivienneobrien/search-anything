@@ -21,7 +21,11 @@ const getEndpoint = (endpoint, individualMedia) => {
 const MediaCard = ({ individualMedia, endpoint }) => {
   return (
     <Card elevation={3}>
-      <CardHeader title={individualMedia.tags} />
+      <CardHeader
+        title={
+          individualMedia.tags ? individualMedia.tags : individualMedia.text
+        }
+      />
       <CardContent>
         <Typography variant="body2" colour="textSecondary" noWrap>
           {getEndpoint(endpoint, individualMedia)}
