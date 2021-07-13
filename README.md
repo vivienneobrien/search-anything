@@ -15,6 +15,6 @@ Guide on how to run on using `npm`and/or `pnpm`.
   - `pnpm install`
   - `pnpm start`
 
-### Dependencies
+### Dependenciesx
 
 Check [package.json](package.json) for the required dependencies.
