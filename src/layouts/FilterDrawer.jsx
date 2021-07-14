@@ -1,15 +1,10 @@
 import { makeStyles } from "@material-ui/styles";
 import React, { useState } from "react";
 import Header from "../components/Header.component";
-import { Button, Drawer, Checkbox, TextField } from "@material-ui/core";
+import { Button, Drawer, TextField } from "@material-ui/core";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 import logo from "../assets/logo.png";
 
-import CheckBoxOutlineBlankIcon from "@material-ui/icons/CheckBoxOutlineBlank";
-import CheckBoxIcon from "@material-ui/icons/CheckBox";
-
-const icon = <CheckBoxOutlineBlankIcon fontSize="small" />;
-const checkedIcon = <CheckBoxIcon fontSize="small" />;
 const drawerWidth = 240;
 
 const segments = [
@@ -79,7 +74,7 @@ const useStyles = makeStyles((theme) => {
     },
   };
 });
-const Layout = ({ children }) => {
+const FilterDrawer = ({ children }) => {
   const classes = useStyles();
 
   const segmentDefaultProps = {
@@ -169,4 +164,4 @@ const Layout = ({ children }) => {
   );
 };
 
-export default Layout;
+export default FilterDrawer;

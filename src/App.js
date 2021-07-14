@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Quotes from "./pages/Quotes";
 import Images from "./pages/Images";
 import Videos from "./pages/Videos";
-import Layout from "./layouts/Layout.component";
+import FilterDrawer from "./layouts/FilterDrawer";
 import { ThemeProvider } from "@material-ui/core/styles";
 import theme from "./styles/theme.styles";
 
@@ -10,7 +10,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Router>
-        <Layout>
+        <FilterDrawer>
           <Switch>
             <Route exact path="/">
               <Quotes />
@@ -22,7 +22,7 @@ function App() {
               <Videos />
             </Route>
           </Switch>
-        </Layout>
+        </FilterDrawer>
       </Router>
     </ThemeProvider>
   );
