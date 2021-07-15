@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => {
       background: "#f9f9f9",
       width: "100%",
       padding: theme.spacing(3),
-      paddingTop: theme.spacing(20), // top
+      paddingTop: theme.spacing(10), // top
     },
     drawer: {
       width: drawerWidth,

@@ -3,6 +3,7 @@ import { Container } from "@material-ui/core";
 import Masonry from "react-masonry-css";
 import axios from "axios";
 import MediaCard from "./MediaCard.component";
+import Query from "./Query.component";
 
 const MediaDisplay = ({ url, endpoint, name }) => {
   const [media, setMedia] = useState([]);
@@ -26,8 +27,11 @@ const MediaDisplay = ({ url, endpoint, name }) => {
     1100: 2,
     700: 1,
   };
+  var filterValues;
+  const searchInput = <div>dogs</div>;
   return (
     <Container>
+      <Query searchInput={searchInput} filterValues={filterValues} />
       <Masonry
         breakpointCols={breakpoints}
         className="my-masonry-grid"
