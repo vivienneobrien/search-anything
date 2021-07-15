@@ -3,15 +3,9 @@ import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import user_image from "../assets/user_image.png";
 import React, { useState, useEffect } from "react";
-import {
-  AppBar,
-  Toolbar,
-  Tab,
-  Tabs,
-  Avatar,
-  Typography,
-} from "@material-ui/core";
+import { AppBar, Toolbar, Tab, Tabs, Typography } from "@material-ui/core";
 import SearchBar from "./SearchBar.component";
+import SubmitButton from "./SubmitButton.component";
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => {
@@ -66,10 +60,14 @@ const Header = () => {
     }
   }, [value]);
 
+  // const [mediaDisplay, setMediaDisplayed] = useState({});
+
   return (
     <AppBar className={classes.appBar} elevation={0}>
       <Toolbar disableGutters={true} className={classes.toolbarHeight}>
         <SearchBar />
+        <SubmitButton />
+
         <Tabs
           value={value}
           onChange={handleChange}
@@ -92,8 +90,9 @@ const Header = () => {
         </Tabs>
 
         <Typography className={classes.userName}></Typography>
-        <Typography> Vivienne O'Brien 👋 </Typography>
+        {/* <Typography> Vivienne O'Brien 👋 </Typography>
         <Avatar src={user_image} alt="User Image" className={classes.avatar} />
+        */}
       </Toolbar>
     </AppBar>
   );

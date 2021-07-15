@@ -2,10 +2,15 @@ import React, { useEffect, useState } from "react";
 import { Container } from "@material-ui/core";
 import Masonry from "react-masonry-css";
 import axios from "axios";
-import MediaCard from "../components/MediaCard.component";
+import MediaCard from "./MediaCard.component";
 
-const Template = ({ url, endpoint, name }) => {
+const MediaDisplay = ({ url, endpoint, name }) => {
   const [media, setMedia] = useState([]);
+
+  useEffect(() => {
+    console.log("page loaded");
+  }, []);
+
   useEffect(() => {
     axios
       .get(url)
@@ -38,4 +43,4 @@ const Template = ({ url, endpoint, name }) => {
   );
 };
 
-export default Template;
+export default MediaDisplay;

@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Quotes from "./pages/Quotes";
-import Images from "./pages/Images";
-import Videos from "./pages/Videos";
-import FilterDrawer from "./layouts/FilterDrawer";
+import Quotes from "./apis/Quotes";
+import Images from "./apis/Images";
+import Videos from "./apis/Videos";
+import FilterDrawer from "./components/FilterDrawer.component";
 import { ThemeProvider } from "@material-ui/core/styles";
 import theme from "./styles/theme.styles";
 

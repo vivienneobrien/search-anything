@@ -1,5 +1,5 @@
 import React from "react";
-import Template from "../layouts/Template";
+import MediaDisplay from "../components/MediaDisplay.component";
 import PropTypes from "prop-types";
 
 var url = `https://type.fit/api/quotes/`;
@@ -7,7 +7,7 @@ var url = `https://type.fit/api/quotes/`;
 const Quotes = () => {
   return (
     <div>
-      <Template url={url} endpoint="author" name={""} />
+      <MediaDisplay url={url} endpoint="author" name={""} />
     </div>
   );
 };

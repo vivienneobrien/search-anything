@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/styles";
 import React, { useState } from "react";
-import Header from "../components/Header.component";
+import Header from "./Header.component";
 import { Button, Drawer, TextField } from "@material-ui/core";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 import logo from "../assets/logo.png";

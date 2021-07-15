@@ -1,6 +1,5 @@
 import { alpha, makeStyles } from "@material-ui/core/styles";
 import React, { useState } from "react";
-import SearchIcon from "@material-ui/icons/Search";
 import InputBase from "@material-ui/core/InputBase";
 
 const useStyles = makeStyles((theme) => {
@@ -41,6 +40,10 @@ const useStyles = makeStyles((theme) => {
       [theme.breakpoints.up("md")]: {
         width: "20ch",
       },
+      contain: {
+        display: "flex",
+        justifyCenter: "space-between",
+      },
     },
   };
 });
@@ -48,7 +51,6 @@ const SearchBar = () => {
   const classes = useStyles();
   // search
   const [searchStatus, setSearchStatus] = useState("");
-  const [showState, setShowState] = useState("Text");
 
   const handleOnChangeSearchStatus = (event) => {
     setSearchStatus(event.target.value);
@@ -58,9 +60,7 @@ const SearchBar = () => {
 
   return (
     <div className={classes.search}>
-      <div className={classes.searchIcon}>
-        <SearchIcon />
-      </div>
+      <div className={classes.searchIcon}></div>
       <InputBase
         placeholder="Search"
         value={searchStatus}
@@ -71,7 +71,6 @@ const SearchBar = () => {
         }}
         inputProps={{ "aria-label": "search" }}
       />
-      {/*  <SearchCheck search={searchStatus} setSearchStatus={setSearchStatus} quoteData={quoteData} setQuoteData={setQuoteData} imageData={imageData} setImageData={setImageData} videoData={videoData} setVideoData={setVideoData}/> */}
     </div>
   );
 };

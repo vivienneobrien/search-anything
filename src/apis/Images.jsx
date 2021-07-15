@@ -1,6 +1,10 @@
 import React from "react";
-import Template from "../layouts/Template";
+import MediaDisplay from "../components/MediaDisplay.component";
 import PropTypes from "prop-types";
+
+//
+// 1.   Search url, import SearchBar from "./components/SearchBar.componenet"
+// 2.
 
 var API_KEY = "22400082-8e6c08d983f752bf5835da06e";
 var searchWord = "dogs";
@@ -9,7 +13,7 @@ var url = `https://pixabay.com/api/?key=${API_KEY}&q=${searchWord}&image_type=ph
 const Images = () => {
   return (
     <div>
-      <Template url={url} endpoint="webformatURL" name={"hits"} />
+      <MediaDisplay url={url} endpoint="webformatURL" name={"hits"} />
     </div>
   );
 };
