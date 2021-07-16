@@ -10,7 +10,7 @@ const useStyles = makeStyles({
   },
 });
 
-const Query = ({ searchInput, filterValues }) => {
+const QueryCard = ({ searchInput, filterValues }) => {
   const classes = useStyles();
   return (
     <div>
@@ -27,4 +27,4 @@ const Query = ({ searchInput, filterValues }) => {
   );
 };
 
-export default Query;
+export default QueryCard;
