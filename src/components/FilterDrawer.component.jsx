@@ -96,10 +96,6 @@ const FilterDrawer = ({ children }) => {
     options: gender,
     getOptionLabel: (option) => option.title,
   };
-  const [segmentFilter, setSegmentFilter] = useState("");
-  const [marketFilter, setMarketFilter] = useState("");
-  const [ageFilter, setAgeFilter] = useState("");
-  const [genderFilter, setGenderFilter] = useState("");
 
   return (
     <div className={classes.root}>

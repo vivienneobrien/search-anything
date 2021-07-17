@@ -14,7 +14,6 @@ const getEndpoint = (endpoint, individualMedia) => {
   } else {
     newEndpoint = individualMedia.url;
   }
-
   return newEndpoint;
 };
 
