@@ -14,8 +14,4 @@ const Text = () => {
   );
 };
 
-Text.propTypes = {
-  url: PropTypes.string.isRequired,
-};
-
 export default Text;
