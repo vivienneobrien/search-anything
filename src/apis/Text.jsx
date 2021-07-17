@@ -1,6 +1,5 @@
 import React from "react";
 import MediaDisplay from "../components/MediaDisplay.component";
-import PropTypes from "prop-types";
 
 const API_KEY = "5a0627a84b52eb8b94d4e0c68cdabfe8";
 const searchWord = "dogs";

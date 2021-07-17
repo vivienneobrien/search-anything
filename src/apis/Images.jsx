@@ -1,6 +1,5 @@
 import React from "react";
 import MediaDisplay from "../components/MediaDisplay.component";
-import PropTypes from "prop-types";
 
 //
 // 1.   Search url, import SearchBar from "./components/SearchBar.componenet"
@@ -16,10 +15,6 @@ const Images = () => {
       <MediaDisplay url={url} endpoint="webformatURL" name={"hits"} />
     </div>
   );
-};
-
-Images.propTypes = {
-  url: PropTypes.string.isRequired,
 };
 
 export default Images;
