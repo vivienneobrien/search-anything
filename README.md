@@ -17,6 +17,12 @@ Guide on how to run on using `npm`and/or `pnpm`.
 - [Serpstack - Free Google Search API](https://serpstack.com/)
 - [Pixabay - Free Images/Videos](https://pixabay.com/)
 
+## Images Of App
+
+![Text](src/assets/images_of_app/text.png)
+![Images](src/assets/images_of_app/images.png)
+![Videos](src/assets/images_of_app/videos.png)
+
 ## Using the following libraries
 
 - [Experimenting with the Pinterest Masonry Grid](https://www.npmjs.com/package/react-masonry-css)
