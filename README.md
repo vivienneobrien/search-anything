@@ -20,7 +20,7 @@ Guide on how to run on using `npm`and/or `pnpm`.
 - [Serpstack - Free Google Search API](https://serpstack.com/)
 - [Pixabay - Free Images/Videos](https://pixabay.com/)
 
-## Using the following APIs
+## Using the following libraries
 
 - [Experimenting with the Pinterest Masonry Grid](https://www.npmjs.com/package/react-masonry-css)
 
