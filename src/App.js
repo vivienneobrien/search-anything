@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Quotes from "./apis/Quotes";
+import Text from "./apis/Text";
 import Images from "./apis/Images";
 import Videos from "./apis/Videos";
 import FilterDrawer from "./components/FilterDrawer.component";
@@ -13,7 +13,7 @@ function App() {
         <FilterDrawer>
           <Switch>
             <Route exact path="/">
-              <Quotes />
+              <Text />
             </Route>
             <Route exact path="/images">
               <Images />

@@ -56,7 +56,7 @@ const SearchBar = () => {
     setSearchStatus(event.target.value);
     console.log(searchStatus);
   };
-  // show data, actual quotes, inputsearch
+  // show data, actual Text, inputsearch
 
   return (
     <div className={classes.search}>

@@ -74,7 +74,7 @@ const Header = () => {
           className={classes.tabContainer}
           indicatorColor="primary"
         >
-          <Tab className={classes.tab} component={Link} to="/" label="Quotes" />
+          <Tab className={classes.tab} component={Link} to="/" label="Text" />
           <Tab
             className={classes.tab}
             component={Link}

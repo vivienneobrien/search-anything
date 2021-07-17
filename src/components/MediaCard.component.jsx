@@ -12,7 +12,7 @@ const getEndpoint = (endpoint, individualMedia) => {
       <video src={individualMedia.videos.tiny.url} alt="information" />
     );
   } else {
-    newEndpoint = individualMedia.author;
+    newEndpoint = individualMedia.url;
   }
 
   return newEndpoint;
@@ -23,7 +23,7 @@ const MediaCard = ({ individualMedia, endpoint }) => {
     <Card elevation={3}>
       <CardHeader
         title={
-          individualMedia.tags ? individualMedia.tags : individualMedia.text
+          individualMedia.tags ? individualMedia.tags : individualMedia.title
         }
       />
       <CardContent>
