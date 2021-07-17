@@ -1,27 +1,27 @@
-import { createTheme } from "@material-ui/core/styles"
+import { createTheme } from "@material-ui/core/styles";
 
-const inspireBlue = "#0B72B9"
-const inspireOrange = "#FFBA60"
+const appBlue = "#0B72B9";
+const appOrange = "#FFBA60";
 
 export default createTheme({
-    palette: {
-        common: {
-            inspireBlue: `${inspireBlue}`,
-            inspireOrange: `${inspireOrange}`
-        },
-        primary: {
-            main: `${inspireBlue}`
-        },
-        secondary: {
-            main: `${inspireOrange}`
-        }
+  palette: {
+    common: {
+      appBlue: `${appBlue}`,
+      appOrange: `${appOrange}`,
     },
-    typography: {
-        tab: {
-            fontFamily: "Raleway",
-            textTransform: "none",
-            fontWeight: 700,
-            fontSize: "1rem"
-            }
-    }
-})
+    primary: {
+      main: `${appBlue}`,
+    },
+    secondary: {
+      main: `${appOrange}`,
+    },
+  },
+  typography: {
+    tab: {
+      fontFamily: "Raleway",
+      textTransform: "none",
+      fontWeight: 700,
+      fontSize: "1rem",
+    },
+  },
+});

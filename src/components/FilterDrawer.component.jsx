@@ -108,7 +108,7 @@ const FilterDrawer = ({ children }) => {
       >
         <div>
           <Button disableRipple className={classes.logoContainer}>
-            <img src={logo} alt="Inspire Logo" className={classes.logo} />
+            <img src={logo} alt="Logo" className={classes.logo} />
           </Button>
 
           {/* Segment */}
