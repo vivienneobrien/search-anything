@@ -19,8 +19,16 @@ Guide on how to run on using `npm`and/or `pnpm`.
 
 ## Images Of App
 
+### Text
+
 ![Text](src/assets/images_of_app/text.png)
+
+### Images
+
 ![Images](src/assets/images_of_app/images.png)
+
+### Videos
+
 ![Videos](src/assets/images_of_app/videos.png)
 
 ## Using the following libraries
