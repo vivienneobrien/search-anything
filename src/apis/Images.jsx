@@ -6,9 +6,9 @@ import PropTypes from "prop-types";
 // 1.   Search url, import SearchBar from "./components/SearchBar.componenet"
 // 2.
 
-var API_KEY = "22400082-8e6c08d983f752bf5835da06e";
-var searchWord = "dogs";
-var url = `https://pixabay.com/api/?key=${API_KEY}&q=${searchWord}&image_type=photo`;
+const API_KEY = "22400082-8e6c08d983f752bf5835da06e";
+const searchWord = "dogs";
+const url = `https://pixabay.com/api/?key=${API_KEY}&q=${searchWord}&image_type=photo`;
 
 const Images = () => {
   return (
