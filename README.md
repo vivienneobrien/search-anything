@@ -11,9 +11,6 @@ Guide on how to run on using `npm`and/or `pnpm`.
 - `npm`
   - `npm install`
   - `npm start`
-- `pnpm`
-  - `pnpm install`
-  - `pnpm start`
 
 ## Using the following APIs
 
