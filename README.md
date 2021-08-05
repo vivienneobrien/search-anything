@@ -1,6 +1,6 @@
 # Search Anything
 
-> An API to search for almost everything
+> An API to search for almost everything. This project was recreated using only React.js here https://github.com/vivienneobrien/search-anything-final
 
 ## How
 
